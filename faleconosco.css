@@ -1,0 +1,63 @@
+section#faleconosco {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+section#faleconosco h2 {
+    font-family: Calibri, sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(175, 4, 33, 0.5);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+nav#menu ol#fale {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 750px;
+}
+
+input, textarea, label {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+}
+
+input#cNome, input#cEmail{
+    width: 500px;
+}
+
+input#cTelefone{
+    width: 200px;
+}
+
+input#faleconosco {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(175, 174, 174, 0.3);
+}
+  
+textarea#cMensagem{
+    width: 1000px;
+}
+
+fieldset {
+    padding: 3px;
+    border: none;
+}
+
+legend#faleconosco {
+    font-size: 30px;
+    font-family: Calibri, sans-serif;
+}

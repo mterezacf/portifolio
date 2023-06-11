@@ -1,0 +1,63 @@
+nav#menu ol#form {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 880px;
+}
+
+form{
+    text-align: center;
+}
+
+fieldset.formulario1 {
+    border: 1px solid;
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+legend.formulario1 {
+    font-size: 30px;
+    font-family: Calibri, sans-serif;
+}
+
+h2#formulario {
+    font-family: Calibri, sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(175, 4, 33, 0.5);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+p.formulario1 {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+}
+
+input, textarea, label, option, select, button {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+}
+
+input.formularioenvio {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 3px 3px 20px 3px;
+}
+
+textarea{
+    width: 1000px;
+}
+
+figure.IMC{
+    position: relative;
+    width: 500px;
+    left: 220px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ 
+<html lang="pt-br">
+    
+<head>
+    <title> Maria Tereza Nutricionista </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="anamnese.css">
+    <link rel="stylesheet" href="faleconosco.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="validacao.js"></script>
+
+</head>
+
+<body>
+    <div id="interface">
+
+
+    <header id="cabecalho">
+    <hgroup>
+    <h1>Nutricionista</h1>
+    <h2>Maria Tereza Constantino Ferreira</h2>
+    </hgroup>
+
+    <nav id="menu">
+        <h1>Menu</h1>
+        <ol id="fale">
+            <li><a href="sitenutricao.html">Menu</a></li>
+            <li><a href="form.html">Formulário de Anamnese Nutricional</a></li>
+        </ol>
+    </nav>
+    </header>
+
+<section id="faleconosco">
+    <h2>Fale Conosco</h2>
+
+    <form method="POST" autocomplete="off" id="validacaofale">
+
+        <p><label for="cNome">Nome: <input type="text" id="cNome" name="tNome" placeholder="Nome Completo" required> </label></p>
+        <p><label for="cEmail">E-mail: <input type="email" id="cEmail" name="tEmail" placeholder="Digite seu e-mail" required> </label></p>
+        <p><label for="cTelefone">Telefone: <input type="tel" id="cTelefone" name="tTelefone" placeholder="(XX) XXXXX-XXXX" required> </label></p>
+        <fieldset>
+            <legend id="faleconosco"> Deixe sua Mensagem </legend>
+            <label for="cMensagem"><textarea type="text" id="cMensagem" name="tMensagem" rows="10" cols="300" placeholder="Digite sua mensagem aqui..."></textarea></label>
+        </fieldset>
+        <input type="submit" id="faleconosco" value="Enviar" onclick="validacaofaleconosco()">
+    </form>
+</section>
+
+<footer id="rodape">
+    <p><a href="http://www.linkedin.com/in/mterezacf/" target="_blank">LinkedIn</a></p>
+    <p>Copyright &copy; 2023 - by Maria Tereza Constantino Ferreira</p>
+    <p>Estudante de Segurança da Informação</p>
+    <p>Faculdade de Tecnologia SENAC-DF</p>
+</footer>
+        
+    </div>
+</body>
+</html>

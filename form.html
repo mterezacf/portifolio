@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+ 
+<html lang="pt-br">
+    
+<head>
+    <title> Maria Tereza Nutricionista </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="anamnese.css">
+    <link rel="stylesheet" href="faleconosco.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="validacao.js"></script>
+ 
+     
+</head>
+
+<body>
+    <div id="interface">
+
+
+    <header id="cabecalho">
+    <hgroup>
+    <h1>Nutricionista</h1>
+    <h2>Maria Tereza Constantino Ferreira</h2>
+    </hgroup>
+
+    <nav id="menu">
+        <h1>Menu</h1>
+        <ol id="form">
+            <li><a href="sitenutricao.html">Menu Principal</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+        </ol>
+    </nav>
+    </header>
+  
+  <h2 id="formulario">Anamnese Nutricional</h2>
+  
+  <form method="POST" autocomplete="on" id="formularioenvio">
+
+    <fieldset class="formulario1">
+      <legend class="formulario1">DADOS BÁSICOS</legend>
+
+      <p class="formulario1"><label for="cNome">Nome: <input type="text" id="cNome" name="tNome" placeholder="Digite seu nome completo" required><br></label></p>
+
+      <p class="formulario1"><label for="cDatadeNascimento">Data de Nascimento: <input type="date" id="cDatadeNascimento" name="tDatadeNascimento" required><br></label></p>
+    
+      <p class="formulario1"><label for="cIdade">Idade: <input type="number" id="cIdade" name="tIdade" required><br></label></p>
+    
+      <p class="formulario1"><label for="cSexo">Sexo: 
+      <select id="cSexo" name="tSexo" required>
+        <option value=""> </option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select><br></label></p>
+    </fieldset>
+    
+    <fieldset class="formulario1">
+      <legend class="formulario1">HISTÓRICO DE DOENÇAS PREGRESSAS</legend>
+
+      <p class="formulario1"><label for="cHistorico"><textarea id="cHistorico" name="tHistorico" placeholder="Descreva em ordem cronológica doenças graves, desde a infância, hospitalizações por problemas de saúde, procedimentos cirúrgicos, acidentes e traumatismos, imunizações, entre outros" 
+      rows="4" cols="50"></textarea><br></label></p>
+    </fieldset>
+    
+    <fieldset class="formulario1">
+      <legend class="formulario1">ALIMENTAÇÃO e NUTRIÇÃO</legend>
+
+      <p class="formulario1"><label for="cAlergias">Alergias e Intolerância Alimentares? Qual? </label></p>
+
+      <p class="formulario1"><label for="cLeite"><input type="checkbox" name="leite" id="cLeite" value="leite">Leite e derivados</label><br></p>
+      <p class="formulario1"><label for="cOvo"><input type="checkbox" name="ovo" id="cOvo" value="ovo">Ovo</label><br></p>
+      <p class="formulario1"><label for="cPeixes"><input type="checkbox" name="peixes" id="cPeixes" value="peixes">Peixes e/ou Frutos do Mar</label><br></p>
+      <p class="formulario1"><label for="cCastanhas"><input type="checkbox" name="castanhas" id="cCastanhas" value="castanhas">Castanhas/Nozes/Amendoim</label><br></p>
+      <p class="formulario1"><label for="cTrigo"><input type="checkbox" name="trigo" id="cTrigo" value="trigo">Trigo</label><br></p>
+      <p class="formulario1"><label for="cOutros"><input type="checkbox" name="outros" id="cOutros" value="outros">Outros</label><br></p>
+
+      <p class="formulario1"><label for="cAlergias"><textarea id="cAlergias" name="tAlergias" rows="1" cols="50" placeholder="Digite sobre outras alergias alimentares ... "></textarea></label><br></p>
+    </fieldset class="formulario1">
+
+    <fieldset class="formulario1">
+      <legend class="formulario1">MEDICAMENTOS</legend>
+
+    <p class="formulario1"><label for="cMedicamentos"><textarea id="cMedicamentos" name="tMedicamentos" rows="3" cols="50" placeholder="Liste todas as medicações e suplementos: (Ex. Capoten, Captopril, 25mg, 1 cp de 12 em 12 horas – Uso contínuo) 
+      "></textarea><br></label></p>
+    </fieldset>
+
+    <fieldset class="formulario1">
+      <legend class="formulario1">SAÚDE</legend>
+
+        <p class="formulario1"><label for="cEstadoGeral">Estado Geral de Saúde: <select id="cEstadoGeral" name="tEstadoGeral" required>
+          <option value=""> </option>
+          <option value="ruim">Ruim</option>
+          <option value="bom">Bom</option>
+          <option value="muitobom">Muito Bom</option>
+          <option value="excelente">Excelente</option>
+        </select><br><br></label></p>
+
+        <p class="formulario1"><label for="cFumo">Fuma? <select id="cFumo" name="tFumo" required>
+          <option value=""> </option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select><br><br></label></p>
+
+        <p class="formulario1"><label for="cBebida">Bebida Alcoólica? <select id="cBebida" name="tBebida" required>
+          <option value=""> </option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option></p><br><br>
+        </select>
+          <p><label for="cBebida">Se sim, qual a frequência?<br><textarea id="cBebida" name="tBebida" rows="2" cols="30" placeholder="Digite a frequencia que ingere bebidas alcoólicas..."></textarea></label><br></p>
+          
+        <p class="formulario1"><label for="cIntestino">Evacuação e Digestão:</label></p> 
+          <p class="formulario1"><label for="cDiariamente"><input type="radio" name="intestino" id="cDiariamente" value="diariamente">Diariamente</label><br></p>
+          <p class="formulario1"><label for="cConstipacao"><input type="radio" name="intestino" id="cConstipacao" value="constipacao">Constipação Intestinal</label><br></p>
+          <p class="formulario1"><label for="cDiarreia"><input type="radio" name="intestino" id="cDiarreia" value="diarreia">Diarréico</label><br><br></p>
+
+    </fieldset>
+
+    <fieldset class="formulario1">
+      <legend class="formulario1">PESO E ALTURA</legend>
+
+      <p class="formulario1"><label for="cPeso">Peso (kg): <input type="number" id="cPeso" name="tPeso" placeholder="Peso em quilos" step="0.1" required><br></label></p>
+    
+      <p class="formulario1"><label for="cAltura">Altura (m): <input type="number" id="cAltura" name="tAltura" placeholder="Altura em metros" step="0.01" required><br></label></p>
+    
+      <p class="formulario1"><label for="cIMC">IMC: <input type="text" id="cIMC" name="tIMC" readonly>
+      <button type="button" onclick="calcularIMC()">Calcular IMC</button></label></p><br>
+    </fieldset>
+
+    <figure class="IMC">
+      <img src="imgIMC.jpeg"/> 
+    </figure>
+    
+    <fieldset class="formulario1">
+      <legend class="formulario1">OBJETIVO</legend>
+
+      <p class="formulario1"><label for="cObjetivo">Objetivo da Dieta: <select id="cObjetivo" name="tObjetivo" required>
+        <option value=""> </option>
+        <option value="perder">Perder peso</option>
+        <option value="manter">Manter peso</option>
+        <option value="ganhar">Ganhar peso</option>
+      </select><br></label></p>
+   </fieldset>
+
+    <fieldset class="formulario1">
+      <legend class="formulario1">ATIVIDADE FÍSICA</legend>
+    
+      <p class="formulario1"><label for="cAtividadeFisica">Nível de atividade: <select id="cAtividadeFisica" name="tAtividadeFisica" required>
+        <option value=""> </option>
+        <option value="sedentario">Sedentário</option>
+        <option value="leve">Atividade Leve (exercício 1-2 dias por semana)</option>
+        <option value="moderado">Atividade Moderado (exercício 3-4 dias por semana)</option>
+        <option value="ativo">Pessoa Ativa (exercício 5-6 dias por semana)</option>
+        <option value="muitoativo">Pessoa muito ativa (exercício diário + trabalho físico)</option>
+      </select><br></label></p>
+    
+      <p class="formulario1"><label for="cDieta">Calorias da Dieta (kcal/dia):<input type="text" id="cDieta" name="tDieta" readonly>
+      <button type="button" onclick="calcularDieta()">Calcular Dieta</button><br><br></label></p>
+    </fieldset>
+
+    <input type="submit" class="formularioenvio" value="Submeter Formulário" onclick="validacao()">
+    <input type="reset" class="formularioenvio" value="Limpar Formulário">
+  
+  </form>
+
+<footer id="rodape">
+    <p><a href="http://www.linkedin.com/in/mterezacf/" target="_blank">LinkedIn</a></p>
+    <p>Copyright &copy; 2023 - by Maria Tereza Constantino Ferreira</p>
+    <p>Estudante de Segurança da Informação</p>
+    <p>Faculdade de Tecnologia SENAC-DF</p>
+</footer>
+        
+    </div>
+</body>
+</html>
