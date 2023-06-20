@@ -59,10 +59,20 @@ function calcularDieta() {
     document.getElementById("cDieta").value = necessidadeCaloricaDiaria.toFixed(0);
     }
       
-function validacao() {
-    window.alert("Formulario Enviado")
-  }
+function Enviar() {
+  var nome = document.getElementById("cNome");
 
-function validacaofaleconosco() {
-    window.alert("Mensagem Enviada com Sucesso")
-  }
+  if (processaNome(nome) == true)
+    window.alert("Obrigado, " + nome.value + "! Sua mensagem foi encaminhada com sucesso!");
+  else
+    window.alert("Cadastro com Falha");
+}
+
+function processaNome(nome) {
+  nome.value = nome.value.toUpperCase();
+  
+  if (nome.value.length == 0)
+    return false;
+  else
+    return true;
+}
